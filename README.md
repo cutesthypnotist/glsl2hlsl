@@ -34,10 +34,26 @@ Sorry if the code gives you an aneurism.
 
 Or just use the website :P
 
-Test shader textures: https://www.shadertoy.com/view/ltScRG Test shader multi-pass: https://www.shadertoy.com/view/7dyXDz https://www.shadertoy.com/view/ssGSDh https://www.shadertoy.com/view/ld3GWS https://www.shadertoy.com/view/XdVGWt
+# Issues
+- Missing material on buffer CRTs
+- In CRT settings -> Material -> Shader pass is reverting to default after re-adding material (i.e.: buffer 1 corresponds to pass "1" in shader, buffer 2 -> pass "2", etc.)
+- Materials -> Textures missing from texture slots.
+- Cubemaps don't generate links.
+- Images don't auto-download.
 
-Common pass: https://www.shadertoy.com/view/MddcRr
+# Other testing things.
+Test shader textures: https://www.shadertoy.com/view/ltScRG
+Test shader multi-pass: https://www.shadertoy.com/view/7dyXDz
+https://www.shadertoy.com/view/ssGSDh
+https://www.shadertoy.com/view/ld3GWS
+https://www.shadertoy.com/view/XdVGWt
 
-Everything: https://www.shadertoy.com/view/wssSD4
+Common pass:
+https://www.shadertoy.com/view/MddcRr
 
-(Test) Textures are downloaded manually for now. Note down where they go i.e.: BufferB iChannel2 => Buffer2 _SecondTex_2 
+Everything: 
+https://www.shadertoy.com/view/wssSD4
+
+Test:
+https://www.shadertoy.com/view/flfSzl
+
