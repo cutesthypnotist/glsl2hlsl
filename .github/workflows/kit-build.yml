@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - kit-kat
 
 jobs:
   build:
@@ -29,15 +29,17 @@ jobs:
           cd www
           npm install
           npm run build
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: website
           path: |
             glsl2hlsl-wasm/www/dist/
+
       - name: Trigger Github Pages
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.PEMA_ACCESS_TOKEN }}
+          token: ${{ secrets.KIT_ACCESS_TOKEN }}
           event-type: update-glsl2hlsl-website
-          repository: pema99/pema99.github.io
+          repository: cutesthypnotist/cutesthypnotist.github.io
