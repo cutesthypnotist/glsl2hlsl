@@ -1,5 +1,3 @@
-# [Online demo here (pema99.github.io/glsl2hlsl)](https://pema99.github.io/glsl2hlsl)
-
 # glsl2hlsl
 Slightly cursed WIP ShaderToy to Unity (ShaderLab) transpiler.
 
@@ -35,3 +33,11 @@ Sorry if the code gives you an aneurism.
 `glsl2hlsl <fileToConvert>`
 
 Or just use the website :P
+
+Test shader textures: https://www.shadertoy.com/view/ltScRG Test shader multi-pass: https://www.shadertoy.com/view/7dyXDz https://www.shadertoy.com/view/ssGSDh https://www.shadertoy.com/view/ld3GWS https://www.shadertoy.com/view/XdVGWt
+
+Common pass: https://www.shadertoy.com/view/MddcRr
+
+Everything: https://www.shadertoy.com/view/wssSD4
+
+(Test) Textures are downloaded manually for now. Note down where they go i.e.: BufferB iChannel2 => Buffer2 _SecondTex_2 
