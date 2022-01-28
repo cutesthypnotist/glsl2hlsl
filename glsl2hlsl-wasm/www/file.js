@@ -30,10 +30,10 @@ export function download_image(name, contents) {
     a.innerHTML = name;
     a.href = contents;
     a.download = name;
-    document.querySelector("#links").appendChild(a);
+    //document.querySelector("#links").appendChild(a);
     
-    //document.body.appendChild(a);
-    // a.click();
+    document.body.appendChild(a);
+    a.click();
 }
 
 export function reset() {

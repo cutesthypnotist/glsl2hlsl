@@ -115,20 +115,20 @@ pub fn get_shader_file(shader: &Shader, extract_props: bool, raymarch: bool, com
     .collect()
 }
 
-//Need to verify that this works first.
+
 pub fn get_image_files(shader: &Shader) -> Vec<ShaderFile> {
-    //TODO: Set up cors proxy for images.
     shader.renderpass.iter().flat_map(|rp| {
         rp.inputs.iter()
         .filter(|inp| inp.ctype == "texture")
         .map(|inp| ShaderFile {
             name: format!("iChannel{} {}.{}",  rp.name, inp.channel, inp.src.chars().skip_while(|&c| c != '.').collect::<String>()),
-            contents: format!("https://www.shadertoy.com{}", inp.src),
+            contents: format!("https://enigmatic-citadel-39001.herokuapp.com/https://www.shadertoy.com{}", inp.src),
         })
         .collect::<Vec<_>>()
     })
     .collect()     
 }
+
 
 pub fn get_shader_meta_file(shader: &Shader, guid: &String) -> ShaderFile {
     let content = format!(
